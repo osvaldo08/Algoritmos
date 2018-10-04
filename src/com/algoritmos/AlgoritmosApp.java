@@ -21,7 +21,7 @@ public class AlgoritmosApp {
 	    Ciclos ciclo = new Ciclos();
 	    Condicionales condicion = new Condicionales();
 		
-	   /* //AAAAAAPedir base y exponente, calcular resultado
+	   /* //Holaaa Pedir base y exponente, calcular resultado
 		System.out.println("Dame la base: ");
 		base = sc.nextInt();
 		System.out.println("Dame el exponente:");
