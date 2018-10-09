@@ -32,7 +32,7 @@ public class Archivos {
 		return texto;
 	}
 	
-	//Escribir en un archivo
+	//Escribir en un archivooo
 	public void escribir(String ubicacion, String contenido) {
 		
 		try {
