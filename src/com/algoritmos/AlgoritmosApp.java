@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.Stack;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class AlgoritmosApp {
@@ -159,31 +160,60 @@ public class AlgoritmosApp {
 //       System.out.println("Elementos en el arbol: "+arbol.size());
        
        //Hashtable Contiene claves para cada una de sus entradas. No se pueden repetir
-	    Hashtable<Integer, String> hash = new Hashtable<Integer, String>();
-	    //se define el tipo de dato de la clave y el del valor
-	    hash.put(1, "Yareli");
-	    hash.put(2, "Alan");
-	    //Al repetir una clave se sobreescribe la existente
-	    hash.put(2, "Manu");
+//	    Hashtable<Integer, String> hash = new Hashtable<Integer, String>();
+//	    //se define el tipo de dato de la clave y el del valor
+//	    hash.put(1, "Yareli");
+//	    hash.put(2, "Alan");
+//	    //Al repetir una clave se sobreescribe la existente
+//	    hash.put(2, "Manu");
+//	    
+//	    //Hashtable se recorre con Enumeration en lugar de iterator
+//	    Enumeration en = hash.keys();
+//	    while(en.hasMoreElements()) {
+//	    	int clave = (int)en.nextElement();
+//	        System.out.println(clave+" - "+hash.get(clave));
+//	    }
+//	    System.out.println("\n");
+//	    hash.put(5, "Osvaldo");
+//	    hash.put(3, "Alan");
+//	    en = hash.keys();
+//	    while(en.hasMoreElements()) {
+//	    	int clave = (int)en.nextElement();
+//	        System.out.println(clave+" - "+hash.get(clave));
+//	    }
+//	    //Podemos comprobar si nuestra Hashtable ya contiene una clave con:
+//      System.out.println("Existe la clave 3? "+hash.containsKey(3));
+//      System.out.println("Existe la clave 4? "+hash.containsKey(4));
 	    
-	    //Hashtable se recorre con Enumeration en lugar de iterator
-	    Enumeration en = hash.keys();
-	    while(en.hasMoreElements()) {
-	    	int clave = (int)en.nextElement();
-	        System.out.println(clave+" - "+hash.get(clave));
-	    }
-	    System.out.println("\n");
-	    hash.put(5, "Osvaldo");
-	    hash.put(3, "Alan");
-	    en = hash.keys();
-	    while(en.hasMoreElements()) {
-	    	int clave = (int)en.nextElement();
-	        System.out.println(clave+" - "+hash.get(clave));
-	    }
-	    //Podemos comprobar si nuestra Hashtable ya contiene una clave con:
-      System.out.println("Existe la clave 3? "+hash.containsKey(3));
-      System.out.println("Existe la clave 4? "+hash.containsKey(4));
+		//TreeMap Incluye una clave por cada valor, y se ordena automaticamente de acuerdo a las claves
+//        int numero = 3;
+//	    Arreglos ar = new Arreglos();
+//	    ar.arreglo(numero);
+	    
+	    
+	    //Recorrer el contenido del arreglo una posicicon
+//	    int[] arreglo1 = {1,2,3,4,5,6,7,8,9,0};
+//	    for(int i : arreglo1)
+//	    	System.out.print(i+" ");
+//	    System.out.println();
+//	    arreglo1 = arreglo.recorrido(arreglo1);
+//	    for(int i: arreglo1)
+//	    	System.out.print(i+" ");
+	    
+	    Archivos archivo = new Archivos();
+	    String lorem = "";
+	    
+	    lorem = archivo.minusculaLeer("C:\\Users\\osval\\Desktop\\prueba.txt"); 
+	    System.out.println(lorem);
+	    archivo.minusculaGuardar("C:\\Users\\osval\\Desktop\\prueba1.txt", lorem);
+	    
+//	    archivo.escribir("C:\\Users\\osval\\Desktop\\Escribir.txt", "Tienen lavadora?");
+//	    archivo.escribir("C:\\Users\\osval\\Desktop\\Escribir.txt", "Sobreescribiendo");
+	    
+	    
+	    
 	}
+	
 
 }
 

@@ -38,6 +38,55 @@ public class Arreglos {
 		
 		}
 	
+	public int arreglo(int numero) {
+
+		int[] arreglo = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+		
+		for(int i=0; i<numero; i++) {
+			for(int j=0; j<10; j++)
+			{
+			System.out.println(arreglo[j]);
+			}
+			System.out.println("\n");
+			for(int k=0; k<10; k++) {
+				if(arreglo[k]==0)
+				{
+					arreglo[k]=9;
+				}else
+				{
+					arreglo[k] = arreglo[k]-1;
+				}
+				
+			}
+		}
+		return numero;
+	}
+	
+	public int[] recorrido(int[] arreglo) {
+		int[] nuevoArr = new int[arreglo.length];
+		for(int i=1; i<arreglo.length; i++)
+			nuevoArr[i]=arreglo[i-1];
+		nuevoArr[0]=arreglo[arreglo.length-1];
+		
+		return nuevoArr;
+	}
+		
+		//while()
+		
+//		if(limite>1)
+//		{
+//			serie[0]=0;
+//			serie[1]=1;
+//			for(int i=2; i<limite; i++) {
+//				serie[i] = serie[i-1]+serie[i-2];}
+//		}else if(limite==1){
+//			serie[0]=0;
+//		}
+//		
+//		return serie;
+//		
+//		}
+	
 	/*public static void main(String[] args) {
 		
 		
@@ -89,13 +138,12 @@ public class Arreglos {
 		      
 		      
 		      
-		  
+		  */
 		
 
 		       
 	
-	}*/
+	}
 	
 	                         
 
-}
