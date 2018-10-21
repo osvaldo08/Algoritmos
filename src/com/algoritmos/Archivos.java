@@ -67,7 +67,7 @@ public class Archivos {
 			String temp;
 			while((temp=buffer.readLine())!=null) {
 				texto+= temp+"\n";
-		         resultado = texto.replaceAll("[a|e|i|o|u|A]", "_");
+		         resultado = texto.replaceAll("[a|e|i|o|u]", "_");
 		     
 			}
 			
